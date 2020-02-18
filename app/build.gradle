@@ -72,4 +72,6 @@ dependencies {
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
     //GreenDao依赖之一
     implementation 'org.greenrobot:greendao:3.2.2'
+    //TabLayout   adnroidx依赖
+    implementation 'com.google.android.material:material:1.0.0'
 }

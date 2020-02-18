@@ -82,6 +82,7 @@ public class MainActivity extends BaseActivity {
         //默认初始页面
         maVp.setCurrentItem(0);
         maRg.check(maRg.getChildAt(0).getId());
+        maVp.setOffscreenPageLimit(2);
     }
 
     @Override

@@ -25,7 +25,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * 时间:  2020/2/18 0018 上午 9:14
  */
 public class NetUtil {
-    private static final String base="";
+    private static final String base="http://mobile.bwstudent.com/";
     private final Api api;
 
     //是否有网
