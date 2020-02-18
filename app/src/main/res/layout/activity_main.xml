@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MainActivity">
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/ma_vp"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+    </androidx.viewpager.widget.ViewPager>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:id="@+id/ma_rg"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/ma_rb1"
+            android:button="@null"
+            android:textSize="30dp"
+            android:text="首页"
+            android:gravity="center"
+            android:textColor="@drawable/textcolor"
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/ma_rb2"
+            android:button="@null"
+            android:textSize="30dp"
+            android:text="订单"
+            android:gravity="center"
+            android:textColor="@drawable/textcolor"
+            />
+    </RadioGroup>
+</LinearLayout>
