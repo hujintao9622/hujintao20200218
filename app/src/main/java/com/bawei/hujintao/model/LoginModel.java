@@ -18,8 +18,8 @@ import io.reactivex.schedulers.Schedulers;
 public class LoginModel implements ILoginContract.IModel {
 
     @Override
-    public void getLoginData(String key, IModelCallback iModelCallback) {
-        NetUtil.getInstance().getApi().login(key,1,5)
+    public void getLoginData(int page,String key, IModelCallback iModelCallback) {
+        NetUtil.getInstance().getApi().login(key,page,5)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<LoginBean>() {

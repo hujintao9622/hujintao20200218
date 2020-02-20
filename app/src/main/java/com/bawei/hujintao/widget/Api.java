@@ -20,5 +20,5 @@ public interface Api {
     Observable<OrderBean> or(@Header("userId")int uid,@Header("sessionId")String sid,
                              @Query("status")int status,@Query("page")int page,@Query("count")int count);
     @GET("small/order/verify/v1/findOrderListByStatus")
-    Observable<PayBean> pay(@Header("userId")int uid,@Header("sessionId")String sid,@Query("orderId")String orderId);
+    Observable<PayBean> pay(@Header("userId")int uid,@Header("sessionId")String sid,@Query("orderId")String orderId,@Query("payType")int type);
 }

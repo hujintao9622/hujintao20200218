@@ -18,7 +18,7 @@ import io.reactivex.schedulers.Schedulers;
 public class OrderModel implements IOrderContract.IModel {
     @Override
     public void getOrderData(int status,int page, IModelCall iModelCall) {
-        NetUtil.getInstance().getApi().or(27823,"158166443136227823",status,page,2)
+        NetUtil.getInstance().getApi().or(27823,"158166443136227823",status,page,10)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<OrderBean>() {
@@ -46,7 +46,7 @@ public class OrderModel implements IOrderContract.IModel {
 
     @Override
     public void getOrderPData(String orid, IModelCa iModelCa) {
-        NetUtil.getInstance().getApi().pay(27823,"158166443136227823",orid)
+        NetUtil.getInstance().getApi().pay(27823,"158166443136227823",orid,1)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<PayBean>() {

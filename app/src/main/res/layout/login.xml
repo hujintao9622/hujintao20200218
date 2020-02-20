@@ -15,12 +15,19 @@
         android:layout_alignParentRight="true"
         android:id="@+id/lo_bt"
         />
-    <GridView
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
         android:layout_width="match_parent"
+        android:id="@+id/lo_sm"
         android:layout_below="@id/lo_ed"
-        android:id="@+id/lo_rc"
-        android:numColumns="2"
         android:layout_height="match_parent">
+        <GridView
+            android:layout_width="match_parent"
 
-    </GridView>
+            android:id="@+id/lo_rc"
+            android:numColumns="2"
+            android:layout_height="match_parent">
+
+        </GridView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
 </RelativeLayout>

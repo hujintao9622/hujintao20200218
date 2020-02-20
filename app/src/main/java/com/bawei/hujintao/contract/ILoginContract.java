@@ -13,10 +13,10 @@ public interface ILoginContract {
         void onFailure(Throwable throwable);
     }
     interface IPresenter{
-        void getLoginData(String key);
+        void getLoginData(int page,String key);
     }
     interface IModel{
-        void getLoginData(String key,IModelCallback iModelCallback);
+        void getLoginData(int page,String key,IModelCallback iModelCallback);
         interface IModelCallback{
             void onSuccess(LoginBean loginBean);
             void onFailure(Throwable throwable);

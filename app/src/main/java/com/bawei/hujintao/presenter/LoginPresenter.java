@@ -20,8 +20,8 @@ public class LoginPresenter extends BasePresenter<ILoginContract.IView> implemen
     }
 
     @Override
-    public void getLoginData(String key) {
-        loginModel.getLoginData(key, new ILoginContract.IModel.IModelCallback() {
+    public void getLoginData(int page,String key) {
+        loginModel.getLoginData(page,key, new ILoginContract.IModel.IModelCallback() {
             @Override
             public void onSuccess(LoginBean loginBean) {
                 view.onSuccess(loginBean);

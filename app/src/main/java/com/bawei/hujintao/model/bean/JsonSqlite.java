@@ -11,21 +11,21 @@ import org.greenrobot.greendao.annotation.Generated;
  */
 @Entity
 public class JsonSqlite {
-    @Id
-    long id;
+    @Id(autoincrement = true)
+    Long id;
     String json;
-    @Generated(hash = 1458089755)
-    public JsonSqlite(long id, String json) {
+    @Generated(hash = 489908297)
+    public JsonSqlite(Long id, String json) {
         this.id = id;
         this.json = json;
     }
     @Generated(hash = 1890786739)
     public JsonSqlite() {
     }
-    public long getId() {
+    public Long getId() {
         return this.id;
     }
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
     public String getJson() {
